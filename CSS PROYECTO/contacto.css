@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+     background-image: url(../imag/fondo3.jpg);
+     background-size: cover;
+ }
+ h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+text-align: center;
+font-size: 50px;
+line-height: 100px;
+
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    float: left;
+    border: none;
+}
+.wss{
+   position: fixed;
+   top: 1.5em;
+   left: 75em;
+   width: 40px;
+   height: 40px;
+   border: none;
+}
+header{
+    height: auto;
+    /* background-color:oldlace; */
+    /* background-image: url(../imag/fondo.jpg); */
+    
+    
+}
+nav{
+    list-style:none;
+    margin-bottom: 20px;
+}
+nav ul{
+    list-style: none;
+    background-color: rgb(255, 208, 215);
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 15px;
+    font-weight: bold;
+    text-transform: uppercase;     
+    
+}
+nav ul li{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(102, 79, 94);
+}
+nav li:hover{
+    background-color: oldlace;
+}
+
+h2{
+   background-color: lightpink;
+   height: 100px;
+   text-align: center;
+   line-height: 100px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img{
+   border: white solid 10px;
+   width: 20em;
+   height: 25em;
+   margin: 15px;
+  float: center;
+  margin-left: 70px;
+
+}
+footer{
+   text-align: center;
+   margin: 50px;
+   border: solid lightpink 5px;
+}
+form{
+	width: 500px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+form label{
+	width: auto;
+	font-weight:bold;
+	display:inline-block;
+}
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+}
+form input[type="reset"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+}
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+form input[type="reset"]:hover{
+	cursor:pointer;
+}

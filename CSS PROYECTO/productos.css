@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+ body{
+     background-image: url(../imag/fondo3.jpg);
+     background-size: cover;
+ }
+ h1{
+     font-family: Arial, Helvetica, sans-serif;
+     text-transform: uppercase;
+text-align: center;
+font-size: 50px;
+line-height: 100px;
+
+ }
+ .logo {
+     height: 60px;
+     width: 60px;
+     float: left;
+     border: none;
+}
+ .wss{
+    position: fixed;
+    top: 1.5em;
+    left: 75em;
+    width: 40px;
+    height: 40px;
+    border: none;
+ }
+ header{
+     height: auto;
+     /* background-color:oldlace; */
+     /* background-image: url(../imag/fondo.jpg); */
+     
+     
+ }
+ nav{
+     list-style:none;
+     margin-bottom: 20px;
+ }
+ nav ul{
+     list-style: none;
+     background-color: rgb(255, 208, 215);
+     display: flex;
+     justify-content: space-evenly;
+     padding-left: 15px;
+     font-weight: bold;
+     text-transform: uppercase;     
+     
+ }
+ nav ul li{
+     display: block;
+     padding: 10px;
+     font-size: 20px;
+ }
+ nav a{
+     text-decoration: none;
+     color: rgb(102, 79, 94);
+ }
+ nav li:hover{
+     background-color: oldlace;
+ }
+
+h2{
+    background-color: lightpink;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img{
+    border: white solid 10px;
+    width: 20em;
+    height: 25em;
+    margin: 15px;
+    /* margin: 0 auto; */
+   /* float: center; */
+   margin-left: 70px;
+
+}
+#ropa h2{
+    text-align: center;
+}
+.productosmujer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+article{
+    display: flex;
+    flex-direction:column-reverse;
+    width: auto;
+    margin: 0 auto;
+}
+article h4{
+    text-align: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px 50px;
+    justify-items: center;
+    align-content: center;
+}
+.caja{
+    min-height: 400px;
+    min-width: 300px;
+    margin: 0 auto;
+    border: white solid 10px;
+    justify-items: center;
+    align-items: center;
+}
+.caja:hover{
+    filter: blur(5px);
+}
+.caja1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-image: url(../imag/remera.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.caja2{
+    grid-column: 2;
+    grid-row: 1/2;
+    background-image: url(../imag/pollera.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.caja3{
+  grid-row: 2;
+  grid-column: 2;
+  background-image: url(../imag/jean.jpg);
+  background-size: cover;
+    background-position: center;
+}
+.caja4{
+    grid-row: 2; 
+    grid-column: auto;
+    background-image: url(../imag/conjunto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.caja5{
+    grid-row: 2;
+    grid-column: 2;
+    background-image: url(../imag/conjunto2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.caja6{
+    grid-row: 2;
+    grid-column: auto;
+    background-image: url(../imag/conjunto3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    text-align: center;
+    margin: 50px;
+    border: solid lightpink 5px;
+}
+
+

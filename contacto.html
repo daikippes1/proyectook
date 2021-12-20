@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Proyecto 1/CSS PROYECTO/contacto.css">
+    <title>Pink Indumentaria</title>
+</head>
+
+<body>
+    <header>
+        <img src="../Proyecto 1/imag/pinklogo.png" alt="pinklogo" class="logo">
+        <h1>Pink Indumentaria</h1>
+        <img src="../Proyecto 1/imag/whatsapp.png" alt="" class="wss">
+    
+        <nav>
+          <ul>
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="quienessomos.html">¿Quienes Somos?</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <main>
+        <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+            <h2>¡Para más información Contactanos!</h2>
+            <section>
+                <label for=nombre>Nombre y Apellido</label><input type="text" required placeholder="Nombre"><br>
+                <label for=email>Email</label><input type="email" required placeholder="Email"><br>
+                <label for=Telefono>Telefono</label><input type="text" required placeholder="Escribe tu tel"><br>
+                <h4>Comentanos el motivo de tu consulta aquí</h4>
+                <label for=agradecimiento>Agradecimientos</label><input type="checkbox"><br>
+                <label for=consulta>Consulta</label><input type="checkbox"><br>
+                <label for=sugerencias>Reclamos o Sugerencias</label><input type="checkbox"><br>
+                <textarea name="areadetexto" id="" cols="30" rows="10"
+                    placeholder="Escribe Aquí tu Comentario"></textarea><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <p>COPYRIGHT PINK INDUMENTARIA - 2021. TODOS LOS DERECHOS RESERVADOS.</p>
+        <p>PINK S.R.L Argentina. Maipu 123. Buenos Aires, Argentina.</p>
+    </footer>
+</body>
+
+</html>
