@@ -5,13 +5,55 @@
  body{
      background-image: url(../imag/fondo3.jpg);
      background-size: cover;
+     background-position: 200% auto;
  }
- h1{
-     font-family: Arial, Helvetica, sans-serif;
-     text-transform: uppercase;
-text-align: center;
-font-size: 50px;
-line-height: 100px;
+
+/* header */
+
+ header{
+    /* background-color:oldlace; */
+    /* background-image: url(../imag/fondo.jpg); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    width: 50%;
+    display: flex;
+
+}
+.imgLogo{
+    width: 70%;
+  
+}
+.imgLogo img {
+    width: 30%;
+    display: flex;
+}
+.wss {
+    display: none;
+
+}
+h1{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 100px;
+}
+nav {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
+ /* h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 100px;
 
  }
  .logo {
@@ -28,13 +70,7 @@ line-height: 100px;
     height: 40px;
     border: none;
  }
- header{
-     height: auto;
-     /* background-color:oldlace; */
-     /* background-image: url(../imag/fondo.jpg); */
-     
-     
- }
+
  nav{
      list-style:none;
      margin-bottom: 20px;
@@ -75,24 +111,26 @@ img{
     height: 25em;
     margin: 15px;
    /* float: center; */
-   margin-left: 70px;
+   /* margin-left: 70px;
 
+} */
+h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
 }
 .contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px 50px;
-    justify-items: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .caja{
-    min-height: 400px;
-    min-width: 300px;
+    width: 90%;
+    height: 40vh;
     margin: 0 auto;
     border: white solid 10px;
-    justify-items: center;
-    align-items: center;
+    margin-bottom: 1rem;
 }
 .caja:hover{
     transform: scale(1.1);
@@ -124,37 +162,65 @@ img{
     background-image: url(../imag/pollera.jpg);
     background-size: cover;
     background-position: center;
-}
-/* @media only screen and (min-width : 320px) {
-.contenedor{
-    grid-template-columns: 1fr 1fr;
-}
-footer{
-    text-align: center;
-    flex-basis: 100%;
-    align-items: center;
-}
-.parrafo{
-    flex-basis: 100%;
-    align-items: center;
-    flex-basis: 100%;
-}
-header{
-    justify-content: center;
-    flex-basis: 100%;
-    align-content: center;
-    text-align: center;
-}
-.titulo{
-    flex-basis: 100%;
-    align-items: center;
-    flex-basis: 100%;
-}
 } */
+
 footer{
     text-align: center;
     margin: 50px;
     border: solid lightpink 5px;
 }
 
+@media only screen and (min-width: 481px) {
+    h1 {
+        display: block;
+    }
+    .logo {
+        width: 70%;
+    }
+    .imgLogo {
+        width: 70%;
+    }
+    nav {
+        width: 30%;
+    }
 
+
+}
+@media only screen and (min-width: 769px) {
+
+    .contenedor {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .caja {
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+   .contenedor{
+       grid-template-columns: repeat(3, 1fr);
+   }
+   .caja{
+       display: grid;
+       height: 30em;
+       width: 35%;
+   }
+.imgLogo {
+    width: 60%;
+    display: flex;
+    height: 150px;
+}
+.wss{
+    display: flex;
+    position: fixed;
+    top: 5em;
+    left: 80em;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+footer{
+    text-align: center;
+    margin: 50px;
+}
+}
