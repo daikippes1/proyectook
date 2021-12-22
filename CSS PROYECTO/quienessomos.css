@@ -3,79 +3,59 @@
     padding: 0;
  }
  body{
-     background-image: url(../imag/fondo3.jpg);
-     background-size: cover;
- }
- h1{
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-text-align: center;
-font-size: 50px;
-line-height: 100px;
-font-family: Arial, Helvetica, sans-serif;
-}
-.logo {
-    height: 60px;
-    width: 60px;
-    float: left;
-    border: none;
-   }
-.wss{
-   position: fixed;
-   top: 1.5em;
-   left: 75em;
-   width: 40px;
-   height: 40px;
-   border: none;
-}
-header{
-    height: auto;
-    /* background-color:oldlace; */
-    /* background-image: url(../imag/fondo.jpg); */
-    
-    
-}
-nav{
-    list-style:none;
-    margin-bottom: 20px;
-}
-nav ul{
-    list-style: none;
-    background-color: rgb(255, 208, 215);
-    display: flex;
-    justify-content: space-evenly;
-    padding-left: 15px;
-    font-weight: bold;
-    text-transform: uppercase;     
-    
-}
-nav ul li{
-    display: block;
-    padding: 10px;
-    font-size: 20px;
-}
-nav a{
-    text-decoration: none;
-    color: rgb(102, 79, 94);
-}
-nav li:hover{
-    background-color: oldlace;
+    background-image: url(../imag/fondo3.jpg);
+    background-size: cover;
+    background-position: 200% auto;
 }
 
-h2{
-   background-color: lightpink;
-   height: 100px;
-   text-align: center;
-   line-height: 100px;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+/* header */
+
+header{
+   /* background-color:oldlace; */
+   /* background-image: url(../imag/fondo.jpg); */
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
-img{
-   border: white solid 10px;
-   width: 20em;
-   height: 25em;
-   margin: 15px;
-  float: center;
-  margin-left: 70px;
+.logo {
+   width: 50%;
+   display: flex;
+
+}
+.imgLogo{
+   width: 70%;
+ 
+}
+.imgLogo img {
+   width: 30%;
+   display: flex;
+}
+.wss {
+   display: none;
+
+}
+h1{
+   display: none;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 2rem;
+   line-height: 100px;
+}
+nav {
+   width: 50%;
+   margin-bottom: 20px;
+}
+h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .parrafo{
     text-align: center;
@@ -87,19 +67,20 @@ img{
     margin: 0 auto;
     justify-content: space-between;
 } */
-.contenedor{
+/* .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px 50px;
-}
+} */
 .caja{
-    min-height: 400px;
-    min-width: 300px;
+    /* min-height: 400px;
+    min-width: 300px; */
+    width: 90%;
+    height: 40vh;
     margin: 0 auto;
     border: white solid 10px;
-    justify-items: center;
-    align-items: center;
+    margin-bottom: 1rem;
 }
 .caja:hover{
     -webkit-transform: rotateY(180deg);
@@ -135,12 +116,65 @@ transform-style: preserve-3d;
     background-image: url(../imag/team5.jpg);
     background-size: cover;
     background-position: center;
-}
+} */
 
 footer{
    text-align: center;
    margin: 50px;
    border: solid lightpink 5px;
 }
+@media only screen and (min-width: 481px) {
+    h1 {
+        display: block;
+    }
+    .logo {
+        width: 70%;
+    }
+    .imgLogo {
+        width: 70%;
+    }
+    nav {
+        width: 30%;
+    }
 
+
+}
+@media only screen and (min-width: 769px) {
+
+    .contenedor {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .caja {
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+   .contenedor{
+       grid-template-columns: repeat(3, 1fr);
+   }
+   .caja{
+       display: grid;
+       height: 30em;
+       width: 35%;
+   }
+.imgLogo {
+    width: 60%;
+    display: flex;
+    height: 150px;
+}
+.wss{
+    display: flex;
+    position: fixed;
+    top: 5em;
+    left: 80em;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+footer{
+    text-align: center;
+    margin: 50px;
+}
+}
 
