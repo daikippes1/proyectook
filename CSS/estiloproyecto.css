@@ -16,6 +16,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
+    flex-direction: row;
 }
 .logo {
     width: 50%;
@@ -131,6 +133,7 @@ h2 {
     margin: 0 auto;
     border: white solid 10px;
     margin-bottom: 1rem;
+    transition-duration: 1s;
 }
 .caja:hover{
     transform: scale(1.1);
@@ -208,7 +211,7 @@ footer{
 .imgLogo {
     width: 60%;
     display: flex;
-    height: 150px;
+    height: 20vh;
 }
 .wss{
     display: flex;
